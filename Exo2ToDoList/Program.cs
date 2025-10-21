@@ -11,6 +11,19 @@ do
     Console.WriteLine("2: Retirer des éléments à la liste");
     Console.WriteLine("3: Afficher les éléments de la liste");
     Console.WriteLine("q: pour quitter le menu");
+
+    choice = Console.ReadLine();
+
+    // Affichage choice= 3 
+
+    if (choice == "3")
+    {
+        for(int i = 0; i < toDoList.Count; i++)
+        {
+            Console.WriteLine("Element numéro "+ (i+1)+" De ma liste: " +toDoList[i]);
+        }
+        Console.WriteLine();
+    }
     Console.Write("Veuillez choisir parmi ces options : ");
     choice = Console.ReadLine();
     Console.WriteLine();
