@@ -21,4 +21,20 @@ do
         toDoList.Add(Console.ReadLine());
     }
 
+
+    if (choice == "2")
+    {
+        Console.WriteLine("Quel élément voulez-vous retirer ?");
+        string item = Console.ReadLine();
+
+        if (toDoList.Contains(item))
+        {
+            toDoList.Remove(item);
+            Console.WriteLine("Item remove");
+        }
+        else
+        {
+            Console.WriteLine("Tu n'as qu'à le faire toi même");
+        }
+    }
 } while (choice != "q");
